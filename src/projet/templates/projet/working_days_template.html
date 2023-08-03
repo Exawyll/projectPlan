@@ -1,0 +1,16 @@
+<!-- working_days_template.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Working Days for {{ year }}</title>
+</head>
+<body>
+    <h1>Working Days for {{ year }}</h1>
+    <ul>
+        {% for day in working_days %}
+            <li>{{ day }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
